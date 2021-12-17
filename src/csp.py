@@ -705,9 +705,9 @@ class rlfa(CSP):
     
 #-------------MAIN-------------
 #Choose your files with the problems here
-f_1 = open("var2-f24.txt", "r")
-f_2 = open("dom2-f24.txt", "r")
-f_3 = open("ctr2-f24.txt", "r") 
+f_1 = open("../rlfap_dataset/var2-f24.txt", "r")
+f_2 = open("../rlfap_dataset/dom2-f24.txt", "r")
+f_3 = open("../rlfap_dataset/ctr2-f24.txt", "r") 
 
 
 solution=rlfa(f_1,f_2,f_3)
