@@ -713,7 +713,7 @@ f_3 = open("../rlfap_dataset/ctr2-f24.txt", "r")
 solution=rlfa(f_1,f_2,f_3)
 start_time = time.time()
 
-"""
+
 #Uncomment this section for fc algorithm
 constr_counter_limit=40000000
 run=backtracking_search(solution, select_unassigned_variable=dom_wdeg, inference=forward_checking)
@@ -723,7 +723,7 @@ elif run==-1:
     print("FC: ","Constraint checks >",constr_counter)
 else:
     print("FC: ",run,"\nConstraint checks =",constr_counter)
-"""
+
 
 
 """
