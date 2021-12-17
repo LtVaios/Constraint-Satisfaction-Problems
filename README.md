@@ -1,5 +1,5 @@
 # Radio Link Frequency Assignment Problem (RLFAP)
-✔️ Solving the famous radio link frequency assignment problem (RLFA) by implementing various contraint satisfaction algorithms like fc, mac, fc-cbj and min-con while using the dom/wdeg heuristic. More info about the project and how the dataset files work you can find at: https://miat.inrae.fr/schiex/rlfap.shtml#intro
+✔️ Solving the famous radio link frequency assignment problem (RLFA) by implementing various contraint satisfaction algorithms like fc, mac, fc-cbj and min-con while using the dom/wdeg or MRV heuristic. More info about the project and how the dataset files work you can find at: https://miat.inrae.fr/schiex/rlfap.shtml#intro
 
 ## Installation / Run
 🔨 Download and install the files locally. <br /><br />
@@ -19,7 +19,7 @@ also checks the future variables against each other removing any arc-inconsisten
 value from their domains. It does additional forward consistent checking.<br /><br />
 🔸 FC-CBJ (Conflict Directed Backjumping): CBJ maintains a jumpback set J for each variable x. CBJ also adds earlier, instantiated variables to Ji. Upon reaching a dead-end at xi, the algorithm jumps back to the latest variable in Ji.<br /><br />
 🔸 Min-Con (minimum conflicts): https://en.wikipedia.org/wiki/Min-conflicts_algorithm.<br /><br />
-📝 PS: For this project I implemented dom/wdeg heuristic to use for my algorithms. More info about this heuristic you can find in this paper: http://www.frontiersinai.com/ecai/ecai2004/ecai04/pdf/p0146.pdf.
+📝 PS: This project uses the famous MRV (Minimum remaining values) heuristic but I also implemented dom/wdeg heuristic to use for my algorithms because it's faster, better but also more complex. More info about this heuristic you can find in this paper: http://www.frontiersinai.com/ecai/ecai2004/ecai04/pdf/p0146.pdf.
 
 ## Built with
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/110px-Python-logo-notext.svg.png" alt="MarineGEO circle logo" style="height: 100px; width:100px;"/>
